@@ -7,10 +7,10 @@ import lombok.Setter;
 import java.time.LocalDateTime;
 
 @Entity
-@Table(name = "games")
+@Table(name = "games", schema = "public")
 @Getter
 @Setter
-public class Game {
+public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -24,4 +24,10 @@ public class Game {
 
     private String board;
     private int moveCount;
+    public User() {
+        this.createdAt = LocalDateTime.now();
+        this.updatedAt = LocalDateTime.now();
+        this.moveCount = 0;
+        this.board = "";
+    }
 }
