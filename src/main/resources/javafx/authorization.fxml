@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.tic_tac_toe.game.controller.PlayerSetupController">
+    <Label text="Настройка игроков"/>
+        <HBox spacing="10">
+            <Label text="Игрок 1:"/>
+            <TextField fx:id="player1NameField" promptText="Имя игрока 1"/>
+            <ChoiceBox fx:id="player1SymbolChoice" >
+                <String fx:value="X"/>
+                <String fx:value="O"/>
+            </ChoiceBox>
+        </HBox>
+
+        <HBox spacing="10">
+            <Label text="Игрок 2:"/>
+            <TextField fx:id="player2NameField" promptText="Имя игрока 2"/>
+            <ChoiceBox fx:id="player2SymbolChoice">
+                <String fx:value="X"/>
+                <String fx:value="O"/>
+            </ChoiceBox>
+        </HBox>
+    <Button fx:id="startGameButton" text="Начать игру" onAction="#handleStartGameButton"/>
+    </VBox>
+

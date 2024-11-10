@@ -4,14 +4,14 @@ import lombok.Getter;
 import org.springframework.stereotype.Service;
 
 @Service
-public class TicTacToeService {
+public class GameService {
     private final GameBoard gameBoard;
     @Getter
     private Player currentPlayer;
     private Player player1;
     private Player player2;
 
-    public TicTacToeService() {
+    public GameService() {
         this.gameBoard = new GameBoard();
     }
 

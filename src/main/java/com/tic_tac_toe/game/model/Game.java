@@ -1,5 +1,6 @@
 package com.tic_tac_toe.game.model;
 
+import com.tic_tac_toe.game.service.Player;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -7,10 +8,10 @@ import lombok.Setter;
 import java.time.LocalDateTime;
 
 @Entity
-@Table(name = "games", schema = "public")
+@Table(name = "players", schema = "public")
 @Getter
 @Setter
-public class User {
+public class Game {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -24,7 +25,7 @@ public class User {
 
     private String board;
     private int moveCount;
-    public User() {
+    public Game() {
         this.createdAt = LocalDateTime.now();
         this.updatedAt = LocalDateTime.now();
         this.moveCount = 0;

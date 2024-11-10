@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<GridPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.tic_tac_toe.game.controller.GameController">
+    <GridPane alignment="CENTER" hgap="5" vgap="5" style="-fx-background-color: #231717;">
+        <padding>
+            <Insets top="20" right="20" bottom="20" left="20"/>
+        </padding>
+
+
+        <GridPane alignment="CENTER" hgap="5" vgap="5" style="-fx-background-color: #fafafa;" GridPane.rowIndex="0" GridPane.columnIndex="0">
+            <padding>
+                <Insets top="20" right="20" bottom="20" left="20"/>
+            </padding>
+            <Button fx:id="cell00" onAction="#makeMove" style="-fx-font-size: 30; -fx-min-width: 100; -fx-min-height: 100;" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+            <Button fx:id="cell01" onAction="#makeMove" style="-fx-font-size: 30; -fx-min-width: 100; -fx-min-height: 100;" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+            <Button fx:id="cell02" onAction="#makeMove" style="-fx-font-size: 30; -fx-min-width: 100; -fx-min-height: 100;" GridPane.rowIndex="0" GridPane.columnIndex="2"/>
+            <Button fx:id="cell10" onAction="#makeMove" style="-fx-font-size: 30; -fx-min-width: 100; -fx-min-height: 100;" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+            <Button fx:id="cell11" onAction="#makeMove" style="-fx-font-size: 30; -fx-min-width: 100; -fx-min-height: 100;" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+            <Button fx:id="cell12" onAction="#makeMove" style="-fx-font-size: 30; -fx-min-width: 100; -fx-min-height: 100;" GridPane.rowIndex="1" GridPane.columnIndex="2"/>
+            <Button fx:id="cell20" onAction="#makeMove" style="-fx-font-size: 30; -fx-min-width: 100; -fx-min-height: 100;" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+            <Button fx:id="cell21" onAction="#makeMove" style="-fx-font-size: 30; -fx-min-width: 100; -fx-min-height: 100;" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+            <Button fx:id="cell22" onAction="#makeMove" style="-fx-font-size: 30; -fx-min-width: 100; -fx-min-height: 100;" GridPane.rowIndex="2" GridPane.columnIndex="2"/>
+        </GridPane>
+    </GridPane>
+</GridPane>
